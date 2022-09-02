@@ -1,0 +1,47 @@
+:root {
+  --color-orange: orange;
+  --color-black: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.navbar a {
+  display: flex;
+  gap: 1em;
+  text-decoration: none;
+  padding: 1em 2em;
+  background-color: var(--color-orange);
+  color: var(--color-black);
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+}
+
+.navbar li ul {
+  display: none;
+  position: absolute;
+}
+
+.navbar__list-first {}
+
+.active {}
+
+.navbar__list-second {}
+
+.navbar__list-third {}

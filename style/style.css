@@ -1,6 +1,8 @@
 :root {
-  --color-orange: orange;
-  --color-black: black;
+  --bg-color-black: #333333;
+  --bg-color-green: #008000;
+  --bg-color-green-lt: #45dd45;
+  --color-wheat: #f5deb3;
 }
 
 * {
@@ -16,16 +18,21 @@ body {
   min-height: 100vh;
 }
 
-.navbar a {
+a {
   display: flex;
   gap: 1em;
   text-decoration: none;
   padding: 1em 2em;
-  background-color: var(--color-orange);
-  color: var(--color-black);
+  color: var(--color-wheat);
+  transition: 0.5s;
+}
+
+a:hover {
+  background-color: var(--bg-color-green-lt);
 }
 
 .navbar ul {
+  background-color: var(--bg-color-black);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -34,7 +41,8 @@ body {
 }
 
 .navbar li ul {
-  display: none;
+  background-color: var(--bg-color-green);
+  /* display: none; */
   position: absolute;
 }
 
